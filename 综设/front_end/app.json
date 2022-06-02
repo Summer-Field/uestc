@@ -1,0 +1,46 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/record/record",
+    "pages/history/history",
+    "pages/historyDetail/historyDetail",
+    "pages/setting/setting",
+    "pages/display/display"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#353535",
+    "navigationBarTitleText": "调整参数",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "设置",
+        "iconPath": "images/home.png",
+        "selectedIconPath": "images/home_green.png"
+      },
+      {
+        "pagePath": "pages/history/history",
+        "text": "历史",
+        "iconPath": "images/list.png",
+        "selectedIconPath": "images/list_green.png"
+      },
+      {
+        "pagePath": "pages/display/display",
+        "text": "统计",
+        "iconPath": "images/tongji.png",
+        "selectedIconPath": "images/tongji_green.png"
+      },
+      {
+        "pagePath": "pages/setting/setting",
+        "text": "其他",
+        "iconPath": "images/setting.png",
+        "selectedIconPath": "images/setting_green.png"
+      }
+    ],
+    "backgroundColor": "#ffffff"
+  },
+  "sitemapLocation": "sitemap.json"
+}

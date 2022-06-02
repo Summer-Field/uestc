@@ -1,0 +1,53 @@
+<view class="container-page">
+  <view class="page-body">
+    <form bindsubmit="formSubmit">
+      <view class="page-section page-section-gap">
+        <view class="weui-cells__title">项目</view>
+        <view class="padding-box weui-cells weui-cells_after-title">
+          <radio-group bindchange="selectedTypeChange" name="type">
+            <view wx:for="{{types}}" wx:key="{{item.name}}">
+              <label>
+                <radio value="{{item.name}}" checked="{{item.checked}}" />{{item.name}}
+              </label>
+            </view>
+          </radio-group>
+        </view>
+      </view>
+      <view class="page-section">
+        <view class="weui-cells__title">数量 ({{selectedType.unit}})</view>
+        <view class="weui-cells weui-cells_after-title">
+          <view class="weui-cell weui-cell_input">
+            <input class="weui-input" type="number" name="amount" bindinput="bindAmountInput" placeholder="请输入数量" placeholder-class="{{amountInvaild?'invalid':''}}" value="{{selectedType.default}}" />
+          </view>
+        </view>
+      </view>
+      <view class="page-section">
+        <view class="weui-cells__title">日期</view>
+        <view class="weui-cells weui-cells_after-title">
+          <view class="weui-cell weui-cell_input">
+            <view class="weui-cell__bd">
+              <picker mode="date" value="{{date}}" name="date" bindchange="bindDateChange">
+                <view class="weui-input">{{date}}</view>
+              </picker>
+            </view>
+          </view>
+        </view>
+        <view class="weui-cells__title">时间</view>
+        <view class="weui-cells weui-cells_after-title">
+          <view class="weui-cell weui-cell_input">
+            <view class="weui-cell__bd">
+              <picker mode="time" value="{{time}}" name="time" bindchange="bindTimeChange">
+                <view class="weui-input">{{time}}</view>
+              </picker>
+            </view>
+          </view>
+        </view>
+      </view>
+      
+      <view class="page-section padding-box">
+        <button type="primary" formType="submit" class="ok">确定</button>
+        <button type="default" bindtap="cancleEvent">取消</button>
+      </view>
+    </form>
+  </view>
+</view>

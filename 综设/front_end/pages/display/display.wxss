@@ -1,0 +1,67 @@
+/* pages/display/display.wxss */
+@import "../common/weui.wxss";
+
+.container{
+    padding:10rpx 0 0 0;
+}
+canvas{
+    width: 100%;
+    height: 190px;
+}
+
+
+.all{
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  width: 100%;
+}
+
+.display_general_info{
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  margin: auto;
+  height: 150rpx;
+  align-items: center;
+  justify-content: center;
+  background-color:white;
+}
+
+.display_element_info{
+  display: flex;
+  align-items: center;
+  background-color: white;
+  width: 45%;
+  height: 100%;
+  margin: auto;
+  flex-direction: column;
+}
+
+.element_situation{
+  display: flex;
+  width: 90%;
+  margin: auto;
+  height: 70%;
+  align-items: center;
+  justify-content: center;
+}
+
+.element_name{
+  display: flex;
+  width: 90%;
+  margin: auto;
+  height: 30%;
+  align-items: center;
+  justify-content: center;
+}
+
+.discription{
+  font-weight: bold;
+  font-size: 70rpx;
+}
+
+.block{
+  display: flex;
+  height: 65rpx;
+}

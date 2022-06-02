@@ -1,0 +1,18 @@
+<view class="container">
+  <block wx:for="{{historyList}}" wx:key="{{item.date}}">
+    <navigator url="../historyDetail/historyDetail?date={{item.date}}">
+    <view id="{{item.date}}" class="history-item {{item.records.length==0?'hidden':''}}" >
+      <view class="title">
+        <view>
+          {{item.date}}
+        </view>
+        <view class="summary">
+          <view wx:for="{{item.summary}}" wx:for-item="smItem">{{smItem.name+smItem.totalAmount+smItem.unit}}</view>
+        </view>
+      </view>
+      <view class="arrow">
+      </view>
+    </view>
+    </navigator>
+  </block>
+</view>

@@ -1,0 +1,39 @@
+
+<!--index.wxml-->
+<view class="container">
+  <view class="page-body">
+    <view class="today-count">
+      <view class="today-box">
+        <text class="today">参数</text>
+        <!-- <text class="today-date">{{today}}</text> -->
+      </view>
+      <view class="today-count-box first">
+        <view class="today-count-item-left">
+          <text>📎</text>
+          <text class="name"> 进程数</text>
+        </view>
+        <view class="today-count-item-right">
+          <text>{{process_num}}</text>
+          <text class="unit"> 个</text>
+        </view>
+      </view>
+      <view class="today-count-box">
+        <view class="today-count-item-left">
+          <text>🎗</text>
+          <text class="name"> 线程数</text>
+        </view>
+        <view class="today-count-item-right">
+          <text>{{thread_num}}</text>
+          <text class="unit"> 个</text>
+        </view>
+      </view>
+      
+      
+    </view>
+    <view class="record padding-box">
+      <navigator url="../record/record">
+        <button type="primary">更改</button>
+      </navigator>
+    </view>
+  </view>
+</view>

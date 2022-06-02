@@ -1,0 +1,33 @@
+<!--pages/display/display.wxml-->
+<view class="all">
+  <!-- 展示当前的总体情况：多少线程，多少进程等 -->
+  <view class="display_general_info">
+
+    <view class="display_element_info">
+      <view class="element_situation">
+        <text>进程数</text>
+      </view>
+      <view class="element_name">
+        <text class="discription">{{process_num}}</text>
+      </view>
+    </view>
+
+
+    <view class="display_element_info">
+      <view class="element_situation">
+        <text>线程数</text>
+      </view>
+      <view class="element_name">
+        <text  class="discription">{{thread_num}}</text>
+      </view>
+    </view>
+
+  </view>
+
+<view class="block"></view>
+
+  <view wx:for="{{number_list}}">
+    <canvas canvas-id='{{item}}' />
+  </view>
+
+</view>
